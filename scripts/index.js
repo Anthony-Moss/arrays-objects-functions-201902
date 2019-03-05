@@ -42,4 +42,18 @@ function coolCities(citiesArray) {
 })
 return coldCities
 }
-coolCities(cities)
+coolCities(cities) 
+
+function cityNames(citiesArray) {
+    let cityNameArray = []
+    let allCities = Object.values(citiesArray);
+    allCities.forEach(function (cities) {
+    let cityName = cities.name
+    cityNameArray.push(cityName)
+})
+return cityNameArray
+}
+cityNames(cities)
+
+
+
