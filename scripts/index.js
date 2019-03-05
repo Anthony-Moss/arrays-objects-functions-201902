@@ -89,3 +89,19 @@ function call3Times(fun) {
 }
 
 call3Times(console.log)
+
+function hello(){
+    console.log('Hello World!')
+}
+
+function nTimes(times, fun) {
+    for (i = 0; i < times; i++) {
+        fun()
+    }
+}
+
+nTimes(2, hello)
+
+function hello(){
+    console.log('Hello World!')
+}
