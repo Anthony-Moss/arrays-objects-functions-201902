@@ -82,3 +82,10 @@ function goodJob(people) {
 goodJob(people)
 
 
+function call3Times(fun) {
+    fun("hello world");
+    fun("hello world");
+    fun("hello world");
+}
+
+call3Times(console.log)
