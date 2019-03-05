@@ -105,3 +105,15 @@ nTimes(2, hello)
 function hello(){
     console.log('Hello World!')
 }
+
+function strMultiply(str, times) {
+    let newArray = []
+    let newString = ''
+    for (i = 0; i < times; i++) {
+        newArray.push(str);
+    }
+    newString = newArray.toString();
+    return newString.replace( /,/g,"")
+}
+
+strMultiply('abc', 5)
